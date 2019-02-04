@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Utilities for Layout - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Flex</h1>
+
+        <div class="row">
+            <div class="col">
+                <div class="d-flex p-2 myhighlight">I'm a flexbox container! { d-flex }</div>
+                <div class="d-inline-flex p-2 myhighlight">I'm an inline flexbox container! { d-inline-flex }</div>
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.d-&lt;breakpoint&gt;-flex</code></li>
+                    <li><code>.d-&lt;breakpoint&gt;-inline-flex</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Direction</h2>
+        <div class="row">
+            <div class="col">
+                <h5><code>d-flex flex-row</code> (browser default)</h5>
+                <div class="d-flex flex-row myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item 1</div>
+                    <div class="p-2 myhighlight">Flex item 2</div>
+                    <div class="p-2 myhighlight">Flex item 3</div>
+                </div>
+                <h5><code>d-flex flex-row-reverse</code></h5>
+                <div class="d-flex flex-row-reverse myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item 1</div>
+                    <div class="p-2 myhighlight">Flex item 2</div>
+                    <div class="p-2 myhighlight">Flex item 3</div>
+                </div>
+                <h5><code>d-flex flex-column</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item 1</div>
+                    <div class="p-2 myhighlight">Flex item 2</div>
+                    <div class="p-2 myhighlight">Flex item 3</div>
+                </div>
+                <h5><code>d-flex flex-column-reverse</code></h5>
+                <div class="d-flex flex-column-reverse myhighlight">
+                    <div class="p-2 myhighlight">Flex item 1</div>
+                    <div class="p-2 myhighlight">Flex item 2</div>
+                    <div class="p-2 myhighlight">Flex item 3</div>
+                </div>
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.flex-&lt;breakpoint&gt;-row</code></li>
+                    <li><code>.flex-&lt;breakpoint&gt;-row-reverse</code></li>
+                    <li><code>.flex-&lt;breakpoint&gt;-column</code></li>
+                    <li><code>.flex-&lt;breakpoint&gt;-column-reverse</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Justify content</h2>
+        <h3><code>flex-row</code></h3>
+        <div class="row">
+            <div class="col">
+                <h5><code>d-flex justify-content-start</code> (browser default)</h5>
+                <div class="d-flex myhighlight mb-3 justify-content-start">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex justify-content-end</code></h5>
+                <div class="d-flex myhighlight mb-3 justify-content-end">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex justify-content-center</code></h5>
+                <div class="d-flex myhighlight mb-3 justify-content-center">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex justify-content-between</code></h5>
+                <div class="d-flex myhighlight mb-3 justify-content-between">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex justify-content-around</code></h5>
+                <div class="d-flex myhighlight mb-3 justify-content-around">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+            </div>
+        </div>
+
+        <h3><code>flex-column</code></h3>
+        <div class="row">
+            <div class="col">
+                <h5><code>d-flex justify-content-start</code> (browser default)</h5>
+                <div class="d-flex flex-column min-h-justify myhighlight mb-3 justify-content-start">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex justify-content-end</code></h5>
+                <div class="d-flex flex-column min-h-justify myhighlight mb-3 justify-content-end">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex justify-content-center</code></h5>
+                <div class="d-flex flex-column min-h-justify myhighlight mb-3 justify-content-center">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex justify-content-between</code></h5>
+                <div class="d-flex flex-column min-h-justify myhighlight mb-3 justify-content-between">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex justify-content-around</code></h5>
+                <div class="d-flex flex-column min-h-justify myhighlight mb-3 justify-content-around">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.justify-content-&lt;breakpoint&gt;-start</code></li>
+                    <li><code>.justify-content-&lt;breakpoint&gt;-end</code></li>
+                    <li><code>.justify-content-&lt;breakpoint&gt;-center</code></li>
+                    <li><code>.justify-content-&lt;breakpoint&gt;-between</code></li>
+                    <li><code>.justify-content-&lt;breakpoint&gt;-around</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Align items</h2>
+        <h3><code>flex-row</code></h3>
+        <div class="row">
+            <div class="col">
+                <h5><code>d-flex align-items-start</code></h5>
+                <div class="d-flex min-h-align myhighlight mb-3 align-items-start">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex align-items-end</code></h5>
+                <div class="d-flex min-h-align myhighlight mb-3 align-items-end">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex align-items-center</code></h5>
+                <div class="d-flex min-h-align myhighlight mb-3 align-items-center">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex align-items-baseline</code></h5>
+                <div class="d-flex min-h-align myhighlight mb-3 align-items-baseline">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex align-items-stretch</code> (browser default)</h5>
+                <div class="d-flex min-h-align myhighlight mb-3 align-items-stretch">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+            </div>
+        </div>
+
+        <h3><code>flex-column</code></h3>
+        <div class="row">
+            <div class="col">
+                <h5><code>d-flex align-items-start</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3 align-items-start">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex align-items-end</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3 align-items-end">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex align-items-center</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3 align-items-center">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex align-items-baseline</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3 align-items-baseline">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>d-flex align-items-stretch</code> (browser default)</h5>
+                <div class="d-flex flex-column myhighlight mb-3 align-items-stretch">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.align-items-&lt;breakpoint&gt;-start</code></li>
+                    <li><code>.align-items-&lt;breakpoint&gt;-end</code></li>
+                    <li><code>.align-items-&lt;breakpoint&gt;-center</code></li>
+                    <li><code>.align-items-&lt;breakpoint&gt;-baseline</code></li>
+                    <li><code>.align-items-&lt;breakpoint&gt;-stretch</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Align self</h2>
+        <h3><code>flex-row</code></h3>
+        <div class="row">
+            <div class="col">
+                <h5><code>align-self-start</code></h5>
+                <div class="d-flex min-h-align myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-start">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>align-self-end</code></h5>
+                <div class="d-flex min-h-align myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-end">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>align-self-center</code></h5>
+                <div class="d-flex min-h-align myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-center">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>align-self-baseline</code></h5>
+                <div class="d-flex min-h-align myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-baseline">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>align-self-stretch</code> (browser default)</h5>
+                <div class="d-flex min-h-align myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-stretch">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+            </div>
+        </div>
+        
+        <h3><code>flex-column</code></h3>
+        <div class="row">
+            <div class="col">
+                <h5><code>align-self-start</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-start">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>align-self-end</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-end">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>align-self-center</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-center">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>align-self-baseline</code></h5>
+                <div class="d-flex flex-column myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-baseline">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <h5><code>align-self-stretch</code> (browser default)</h5>
+                <div class="d-flex flex-column myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight align-self-stretch">Aligned flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.align-self-&lt;breakpoint&gt;-start</code></li>
+                    <li><code>.align-self-&lt;breakpoint&gt;-end</code></li>
+                    <li><code>.align-self-&lt;breakpoint&gt;-center</code></li>
+                    <li><code>.align-self-&lt;breakpoint&gt;-baseline</code></li>
+                    <li><code>.align-self-&lt;breakpoint&gt;-stretch</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Fill</h2>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex myhighlight">
+                    <div class="p-2 flex-fill myhighlight">Flex item with a lot of content { .flex-fill }</div>
+                    <div class="p-2 flex-fill myhighlight">Flex item { .flex-fill }</div>
+                    <div class="p-2 myhighlight">Flex item { no .flex-fill }</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.flex-&lt;breakpoint&gt;-fill</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Grow and shrink</h2>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex myhighlight">
+                    <div class="p-2 flex-grow-1 myhighlight">Flex item { .flex-grow-1 }</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Third flex item</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex myhighlight">
+                    <div class="p-2 w-100 myhighlight">Flex item { .w-100 }</div>
+                    <div class="p-2 flex-shrink-1 myhighlight">Flex item { .flex-shrink-1 }</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.flex-&lt;breakpoint&gt;-grow-1, .flex-&lt;breakpoint&gt;-grow-0</code></li>
+                    <li><code>.flex-&lt;breakpoint&gt;-shrink-1, .flex-&lt;breakpoint&gt;-shrink-0</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Auto margins</h2>
+        <p><strong>Unfortunately, IE10 and IE11 do not properly support auto margins on flex items whose parent has a non-default justify-content value.</strong> <a href="https://stackoverflow.com/a/37535548" target="_blank">See this StackOverflow answer</a> for more details.</p>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <div class="d-flex myhighlight mb-3">
+                    <div class="mr-auto p-2 myhighlight">Flex item { .mr-auto }</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+                <div class="d-flex myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="ml-auto p-2 myhighlight">Flex item { .ml-auto }</div>
+                </div>
+                <div class="d-flex min-h-align myhighlight mb-3">
+                    <div class="m-auto p-2 myhighlight">Flex item { m-auto }</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>With align-items (start / end) (and flex-column on parent)</h3>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-start flex-column myhighlight mb-3" style="height: 200px;">
+                    <div class="mb-auto p-2 myhighlight">Flex item { .mb-auto }</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+
+                <div class="d-flex align-items-end flex-column myhighlight mb-3" style="height: 200px;">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="mt-auto p-2 myhighlight">Flex item { .mt-auto }</div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Wrap</h2>
+        <div class="row">
+            <div class="col">
+                <h3><code>flex-nowrap</code></h3>
+                <div class="d-flex flex-nowrap myhighlight mb-3" style="width: 8rem;">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+
+                <h3><code>flex-wrap</code></h3>
+                <div class="d-flex flex-wrap myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+
+                <h3><code>flex-wrap-reverse</code></h3>
+                <div class="d-flex flex-wrap-reverse myhighlight mb-3">
+                    <div class="p-2 myhighlight">Flex item 1</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item 15</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.flex-&lt;breakpoint&gt;-nowrap</code></li>
+                    <li><code>.flex-&lt;breakpoint&gt;-wrap</code></li>
+                    <li><code>.flex-&lt;breakpoint&gt;-wrap-reverse</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Order</h2>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-nowrap myhighlight mb-3">
+                    <div class="order-3 p-2 myhighlight">First flex item { .order-3 }</div>
+                    <div class="order-2 p-2 myhighlight">Second flex item { .order-2 }</div>
+                    <div class="order-1 p-2 myhighlight">Third flex item { .order-1 }</div>
+                </div>
+                <div class="d-flex flex-nowrap myhighlight mb-3">
+                    <div class="order-last p-2 myhighlight">First flex item { .order-last } (<code>order: 13</code>)</div>
+                    <div class="p-2 myhighlight">Second flex item { no order }</div>
+                    <div class="order-first p-2 myhighlight">Third flex item { .order-first } (<code>order: -1</code>)</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.order-&lt;breakpoint&gt;-{0-12}</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Align content</h2>
+        <p>Similar to <code>.align-items</code>, but doesn't work on single rows of flex items (nowrap)</p>
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3"><code>align-content-start</code> (browser default)</h3>
+                <div class="d-flex align-content-start flex-wrap myhighlight mb-3" style="height: 200px">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+
+                <h3 class="my-3"><code>align-content-end</code></h3>
+                <div class="d-flex align-content-end flex-wrap myhighlight mb-3" style="height: 200px">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+
+                <h3 class="my-3"><code>align-content-center</code></h3>
+                <div class="d-flex align-content-center flex-wrap myhighlight mb-3" style="height: 200px">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+
+                <h3 class="my-3"><code>align-content-between</code></h3>
+                <div class="d-flex align-content-between flex-wrap myhighlight mb-3" style="height: 200px">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+
+                <h3 class="my-3"><code>align-content-around</code></h3>
+                <div class="d-flex align-content-around flex-wrap myhighlight mb-3" style="height: 200px">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+
+                <h3 class="my-3"><code>align-content-stretch</code></h3>
+                <div class="d-flex align-content-stretch flex-wrap myhighlight mb-3" style="height: 200px">
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                    <div class="p-2 myhighlight">Flex item</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Responsive variations:</h3>
+                <ul>
+                    <li><code>.align-content-&lt;breakpoint&gt;-start</code></li>
+                    <li><code>.align-content-&lt;breakpoint&gt;-end</code></li>
+                    <li><code>.align-content-&lt;breakpoint&gt;-center</code></li>
+                    <li><code>.align-content-&lt;breakpoint&gt;-between</code></li>
+                    <li><code>.align-content-&lt;breakpoint&gt;-around</code></li>
+                    <li><code>.align-content-&lt;breakpoint&gt;-stretch</code></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>
