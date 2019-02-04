@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Accessibility - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Accessibility</h1>
+        <h3>Visually hidden content</h3>
+        <p>Content which should be visually hidden, but remain accessible to assistive technologies such as screen readers, can be styled using the <code>.sr-only</code> class. This can be useful in situations where additional visual information or cues (such as meaning denoted through the use of color) need to also be conveyed to non-visual users.</p>
+        <div class="row">
+            <div class="col">
+                <div class="sr-only">Example:</div>
+                <div class="bg-dark p-3">
+                    <code class="pre-wrap"><!--
+-->&lt;p class="text-danger"&gt;
+  &lt;span class="<span style="color: var(--yellow)">sr-only</span>"&gt;Danger: &lt;/span&gt;
+  This action is not reversible
+&lt;/p&gt;<!--
+                    --></code>
+                </div>
+            </div>
+        </div>
+
+        <p>For visually hidden interactive controls, such as traditional “skip” links, <code>.sr-only</code> can be combined with the <code>.sr-only-focusable</code> class. This will ensure that the control becomes visible once focused (for sighted keyboard users).</p>
+        <div class="row">
+            <div class="col">
+                <div class="sr-only">Example:</div>
+                <div class="bg-dark p-3">
+                    <code class="pre-wrap"><!--
+-->&lt;a class="<span style="color: var(--yellow)">sr-only sr-only-focusable</span>" href="#content"&gt;Skip to main content&lt;/a&gt;<!--
+                    --></code>
+                    <a href="#" class="sr-only sr-only-focusable text-white">Focus me!</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>

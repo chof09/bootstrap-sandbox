@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Variables - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Variables</h1>
+
+        <h3>All colors</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--blue)">var(--blue); (#007bff)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--indigo)">var(--indigo); (#6610f2)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--purple)">var(--purple); (#6f42c1)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--pink)">var(--pink); (#e83e8c)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--red)">var(--red); (#dc3545)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--orange)">var(--orange); (#fd7e14)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--yellow)">var(--yellow); (#ffc107)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--green)">var(--green); (#28a745)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--teal)">var(--teal); (#20c997)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 mb-3 text-white" style="background-color: var(--cyan)">var(--cyan); (#17a2b8)</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Theme colors</h3>
+        <div class="row">
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--primary)">var(--primary); (#007bff)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--secondary)">var(--secondary); (#6c757d)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--success)">var(--success); (#28a745)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--danger)">var(--danger); (#dc3545)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--warning)">var(--warning); (#ffc107)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--info)">var(--info); (#17a2b8)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3" style="background-color: var(--light)">var(--light); (#f8f9fa)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--dark)">var(--dark); (#343a40)</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Grays</h3>
+        <div class="row">
+            <div class="col-md-4">
+              <div class="p-3 mb-3" style="background-color: var(--white)">var(--white); (#fff)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--gray)">var(--gray); (#6c757d)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 mb-3 text-white" style="background-color: var(--gray-dark)">var(--gray-dark); (#343a40)</div>
+            </div>
+        </div>
+
+        <h5 class="mb-3">SASS variables</h5>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <div class="p-3 swatch-100">$gray-100</div>
+                <div class="p-3 swatch-200">$gray-200</div>
+                <div class="p-3 swatch-300">$gray-300</div>
+                <div class="p-3 swatch-400">$gray-400</div>
+                <div class="p-3 swatch-500">$gray-500</div>
+                <div class="p-3 swatch-600">$gray-600</div>
+                <div class="p-3 swatch-700">$gray-700</div>
+                <div class="p-3 swatch-800">$gray-800</div>
+                <div class="p-3 swatch-900">$gray-900</div>
+            </div>
+        </div>
+        
+        <hr>
+
+        <h3>Breakpoints</h3>
+        <p>While we originally included breakpoints in our CSS variables (e.g., <code>--breakpoint-md</code>), these are not supported in media queries, but they can still be used within rulesets in media queries.</p>
+        <p><strong class="text-danger">not supported:</strong> <code>@media (min-width: var(--breakpoint-sm)) { ... }</code><br>
+        <strong class="text-success">supported:</strong> <code>@media (min-width: 768px) { .custom-element { color: var(--primary); } }</code></p>
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li><code>var(--breakpoint-xs);</code> { 0px }</li>
+                    <li><code>var(--breakpoint-sm);</code> { 576px }</li>
+                    <li><code>var(--breakpoint-md);</code> { 768px }</li>
+                    <li><code>var(--breakpoint-lg);</code> { 992px }</li>
+                    <li><code>var(--breakpoint-xl);</code> { 1200px }</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Fonts</h3>
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li><code>var(--font-family-sans-serif);</code> { -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }</li>
+                    <li><code>var(--font-family-monospace);</code> { SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>All CSS compiled variables</h3>
+        <div class="row">
+            <div class="col">
+                <div class="bg-dark p-3">
+                    <code class="pre-wrap"><!--
+-->:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}<!--
+                    --></code>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>
