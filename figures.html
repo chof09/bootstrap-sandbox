@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Figures - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Figures</h1>
+
+        <p>Use the included <code>.figure</code> , <code>.figure-img</code> and <code>.figure-caption</code> classes to provide some baseline styles for the HTML5 <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements. Images in figures have no explicit size, so be sure to add the <code>.img-fluid</code> class to your <code>&lt;img&gt;</code> to make it responsive.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;figure class="<span class="text-warning">figure</span>"&gt;
+  &lt;img src="..." class="<span class="text-warning">figure-img img-fluid</span> rounded" alt="..."&gt;
+  &lt;figcaption class="<span class="text-warning">figure-caption</span>"&gt;A caption for the above image.&lt;/figcaption&gt;
+&lt;/figure&gt;<!--
+            --></code>
+        </div>
+        <figure class="figure">
+            <img src="imgs/400x300.png" class="figure-img img-fluid rounded" alt="400x300 image">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+        <p>Aligning the figure’s caption is easy with <a href="utilities/text.html">text utilities</a>.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;figure class="figure"&gt;
+  &lt;img src="..." class="figure-img img-fluid rounded" alt="..."&gt;
+  &lt;figcaption class="figure-caption <span class="text-warning">text-right</span>"&gt;A caption for the above image.&lt;/figcaption&gt;
+&lt;/figure&gt;<!--
+            --></code>
+        </div>
+        <figure class="figure">
+            <img src="imgs/400x300.png" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+        </figure>
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>
