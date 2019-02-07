@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Images - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Images</h1>
+
+        <h3>Responsive images</h3>
+        <p>Images in Bootstrap are made responsive with <code>.img-fluid</code>.<br>
+        <code>max-width: 100%;</code> and <code>height: auto;</code> are applied to the image so that it scales with the parent element.</p>
+        <img src="imgs/responsive-image.png" class="img-fluid" alt="Responsive placeholder image">
+        <div class="px-3 py-2 mt-3" style="border: 1px solid rgba(0,0,0,.2); border-left: 5px solid var(--warning);">
+            <h5>SVG images and IE 10</h5>
+            In Internet Explorer 10, SVG images with <code>.img-fluid</code> are disproportionately sized. To fix this, add <code>width: 100% \9;</code> where necessary. This fix improperly sizes other image formats, so Bootstrap doesn’t apply it automatically.
+        </div>
+
+        <hr>
+
+        <h3>Image thumbnails</h3>
+        <p>In addition to our <a href="utilities/borders.html">border-radius utilities</a>, you can use <code>.img-thumbnail</code> to give an image a rounded 1px border appearance.</p>
+        <img src="imgs/200x200.png" alt="200x200 placeholder image" class="img-thumbnail">
+
+        <hr>
+
+        <h3>Aligning images</h3>
+        <p>Align images with the <a href="utilities/float.html">helper float classes</a> or <a href="utilities/text.html">text alignment classes</a>. Block-level images can be centered using the <a href="utilities/spacing.html">.mx-auto margin utility class</a>.</p>
+        <h5><code>&lt;img src="..." class="rounded float-left" alt="..."&gt;</code><br>
+        <code>&lt;img src="..." class="rounded float-right" alt="..."&gt;</code></h5>
+        <div class="p-3 mb-4" style="border: 1px solid rgba(0,0,0,.2); overflow: auto">
+            <img src="imgs/200x200.png" class="rounded float-left" alt="200x200 image">
+            <img src="imgs/200x200.png" class="rounded float-right" alt="200x200 image">
+        </div>
+        <h5><code>&lt;img src="..." class="rounded mx-auto d-block" alt="..."&gt;</code></h5>
+        <div class="p-3 mb-4" style="border: 1px solid rgba(0,0,0,.2); overflow: auto">
+            <img src="imgs/200x200.png" class="rounded mx-auto d-block" alt="200x200 image">
+        </div>
+        <h5><code>&lt;div class="text-center"&gt; &lt;img src="..." class="rounded" alt="..."&gt; &lt;/div&gt;</code></h5>
+        <div class="p-3 mb-4 text-center" style="border: 1px solid rgba(0,0,0,.2); overflow: auto">
+            <img src="imgs/200x200.png" class="rounded" alt="200x200 image">
+        </div>
+
+        <hr>
+
+        <h3>Picture</h3>
+        <p>If you are using the <code>&lt;picture&gt;</code> element to specify multiple <code>&lt;source&gt;</code> elements for a specific <code>&lt;img&gt;</code>, make sure to add the <code>.img-*</code> classes to the <code>&lt;img&gt;</code> and not to the <code>&lt;picture&gt;</code> tag.</p>
+        <div class="bg-dark p-3">
+            <code class="pre-wrap"><!--
+-->&lt;picture&gt;
+    &lt;source srcset="..." type="image/svg+xml"&gt;
+    &lt;img src="..." class="<span class="text-warning">img-fluid img-thumbnail</span>" alt="..."&gt;
+&lt;/picture&gt;<!--
+            --></code>
+        </div>
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>
