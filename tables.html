@@ -87,6 +87,799 @@
         <hr>
 
         <h3>Table head options</h3>
+        <p>Similar to tables and dark tables, use the modifier classes <code>.thead-light</code> or <code>.thead-dark</code> to make <code>&lt;thead&gt;</code>s appear light or dark gray.</p>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Striped rows</h3>
+        <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Bordered table</h3>
+        <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-bordered table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Borderless table</h3>
+        <p>Add <code>.table-borderless</code> for a table without borders.</p>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-borderless table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Hoverable rows</h3>
+        <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Small table</h3>
+        <p>Add <code>.table-sm</code> to make tables more compact by cutting cell padding in half.</p>
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Contextual classes</h3>
+        <p>Use contextual classes to color table rows or individual cells.</p>
+        <h5>On rows</h5>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;tr class="table-active"&gt;...&lt;/tr&gt;
+&lt;tr&gt;...&lt;/tr&gt;
+&lt;tr class="table-primary"&gt;...&lt;/tr&gt;
+&lt;tr class="table-secondary"&gt;...&lt;/tr&gt;
+&lt;tr class="table-success"&gt;...&lt;/tr&gt;
+&lt;tr class="table-danger"&gt;...&lt;/tr&gt;
+&lt;tr class="table-warning"&gt;...&lt;/tr&gt;
+&lt;tr class="table-info"&gt;...&lt;/tr&gt;
+&lt;tr class="table-light"&gt;...&lt;/tr&gt;
+&lt;tr class="table-dark"&gt;...&lt;/tr&gt;<!--
+            --></code>
+        </div>
+        <table class="table mb-4">
+            <thead>
+                <tr>
+                    <th scope="col">Class</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">Active</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr>
+                    <th scope="row">Default</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-primary">
+                    <th scope="row">Primary</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">Secondary</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">Success</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">Danger</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">Warning</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-info">
+                    <th scope="row">Info</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">Light</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-dark">
+                    <th scope="row">Dark</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>On cells (<code>td</code> or <code>th</code>)</h5>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;tr&gt;
+  &lt;td class="table-active"&gt;...&lt;/td&gt;
+  &lt;td&gt;default&lt;/td&gt;
+  &lt;td class="table-primary"&gt;...&lt;/td&gt;
+  &lt;td class="table-secondary"&gt;...&lt;/td&gt;
+  &lt;td class="table-success"&gt;...&lt;/td&gt;
+  &lt;td class="table-danger"&gt;...&lt;/td&gt;
+  &lt;td class="table-warning"&gt;...&lt;/td&gt;
+  &lt;td class="table-info"&gt;...&lt;/td&gt;
+  &lt;td class="table-light"&gt;...&lt;/td&gt;
+  &lt;td class="table-dark"&gt;...&lt;/td&gt;
+&lt;/tr&gt;<!--
+            --></code>
+        </div>
+        <table class="table mb-4">
+            <tbody>
+                <tr>
+                    <td class="table-active">Active</td>
+                    <td>Default</td>
+                    <td class="table-primary">Primary</td>
+                    <td class="table-secondary">Secondary</td>
+                    <td class="table-success">Success</td>
+                    <td class="table-danger">Danger</td>
+                    <td class="table-warning">Warning</td>
+                    <td class="table-info">Info</td>
+                    <td class="table-light">Light</td>
+                    <td class="table-dark">Dark</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Regular table background variants are not available with the dark table, however, you may use <a href="utilities/colors.html">text or background utilities</a> to achieve similar styles.</p>
+        <h5>On rows</h5>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;tr&gt;...&lt;/tr&gt;
+&lt;tr class="bg-primary"&gt;...&lt;/tr&gt;
+&lt;tr class="bg-success"&gt;...&lt;/tr&gt;
+&lt;tr class="bg-info"&gt;...&lt;/tr&gt;
+&lt;tr class="bg-warning"&gt;...&lt;/tr&gt;
+&lt;tr class="bg-danger"&gt;...&lt;/tr&gt;<!--
+            --></code>
+        </div>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Default</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="bg-primary">
+                    <th scope="row">2</th>
+                    <td>Primary</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="bg-success">
+                    <th scope="row">3</th>
+                    <td>Success</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="bg-info">
+                    <th scope="row">4</th>
+                    <td>Info</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="bg-warning">
+                    <th scope="row">5</th>
+                    <td>Warning</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="bg-danger">
+                    <th scope="row">6</th>
+                    <td>Danger</td>
+                    <td>Cell</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5>On cells (<code>td</code> or <code>th</code>)</h5>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;tr&gt;
+  &lt;td&gt;...&lt;/td&gt;
+  &lt;td class="bg-primary"&gt;...&lt;/td&gt;
+  &lt;td class="bg-success"&gt;...&lt;/td&gt;
+  &lt;td class="bg-info"&gt;...&lt;/td&gt;
+  &lt;td class="bg-warning"&gt;...&lt;/td&gt;
+  &lt;td class="bg-danger"&gt;...&lt;/td&gt;
+&lt;/tr&gt;<!--
+            --></code>
+        </div>
+        <table class="table mb-4">
+            <tbody>
+                <tr>
+                    <td>Default</td>
+                    <td class="bg-primary">Primary</td>
+                    <td class="bg-success">Success</td>
+                    <td class="bg-info">Info</td>
+                    <td class="bg-warning">Warning</td>
+                    <td class="bg-danger">Danger</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="px-3 py-2 mb-3" style="border: 1px solid rgba(0,0,0,.2); border-left: 5px solid var(--warning);">
+            <h5>Conveying meaning to assistive technologies</h5>
+            Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.
+        </div>
+        <p>Create responsive tables by wrapping any <code>.table</code> with <code>.table-responsive{-sm|-md|-lg|-xl}</code>, making the table scroll horizontally at each <code>max-width</code> breakpoint of up to (but not including) 576px, 768px, 992px, and 1120px, respectively.</p>
+        <div class="px-3 py-2 mb-3" style="border: 1px solid rgba(0,0,0,.2); border-left: 5px solid var(--info);">
+            Note that since browsers do not currently support range context queries, we work around the limitations of min- and max- prefixes and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision for these comparisons.
+        </div>
+
+        <hr>
+
+        <h3>Captions</h3>
+        <p>A <code>&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;table class="table"&gt;
+  &lt;caption&gt;List of users&lt;/caption&gt;
+  &lt;thead&gt;
+    ...<!--
+            --></code>
+        </div>
+        <table class="table">
+            <caption>List of users</caption>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Responsive tables</h3>
+        <p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code>.table-responsive{-sm|-md|-lg|-xl}</code>.</p>
+        <div class="px-3 py-2 mb-3" style="border: 1px solid rgba(0,0,0,.2); border-left: 5px solid var(--warning);">
+            <h5>Vertical clipping/truncation</h5>
+            Responsive tables make use of <code>overflow-y: hidden</code>, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.
+        </div>
+        
+        <h5>Always responsive</h5>
+        <p>Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="table-responsive"&gt;
+  &lt;table class="table"&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="table-responsive mb-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Breakpoint specific</h5>
+        <p>Use <code>.table-responsive{-sm|-md|-lg|-xl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
+        <p><strong>This table may appear broken until it's responsive styles apply at specific viewport width.</strong> { <code>.table-responsive-md</code> }</p>
+        <div class="table-responsive-md">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     </div>
 
