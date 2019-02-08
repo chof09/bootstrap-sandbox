@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Components - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Breadcrumb</h1>
+
+        <p class="lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;nav aria-label="breadcrumb"&gt;
+  &lt;ol class="<span class="text-warning">breadcrumb</span>"&gt;
+    &lt;li class="<span class="text-warning">breadcrumb-item active</span>" aria-current="page"&gt;Home&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label="breadcrumb"&gt;
+  &lt;ol class="<span class="text-warning">breadcrumb</span>"&gt;
+    &lt;li class="<span class="text-warning">breadcrumb-item</span>"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="<span class="text-warning">breadcrumb-item active</span>" aria-current="page"&gt;Library&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label="breadcrumb"&gt;
+  &lt;ol class="<span class="text-warning">breadcrumb</span>"&gt;
+    &lt;li class="<span class="text-warning">breadcrumb-item</span>"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="<span class="text-warning">breadcrumb-item</span>"&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="<span class="text-warning">breadcrumb-item active</span>" aria-current="page"&gt;Data&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;<!--
+            --></code>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+
+        <hr>
+
+        <h3>Changing the separator</h3>
+        <p>Separators are automatically added in CSS through <code>::before</code> and <code>content</code>. They can be changed by changing <code>$breadcrumb-divider</code>. The <a href="https://sass-lang.com/documentation/Sass/Script/Functions.html#quote-instance_method" target="_blank">quote function</a> is needed to generate the quotes around a string, so if you want <code>></code> as separator, you can use this:</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->$breadcrumb-divider: <span class="text-warning">quote(">");</span><!--
+            --></code>
+        </div>
+        <p>It’s also possible to use a <strong>base64 embedded SVG icon</strong>:</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->$breadcrumb-divider: <span class="text-warning">url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);</span><!--
+            --></code>
+        </div>
+        <p>The separator can be removed by setting <code>$breadcrumb-divider</code> to <code>none</code>:</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->$breadcrumb-divider: <span class="text-warning">none;</span><!--
+            --></code>
+        </div>
+
+        <hr>
+
+        <h3>Accessibility</h3>
+        <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code>aria-label="breadcrumb"</code> to describe the type of navigation provided in the <code>&lt;nav&gt;</code> element, as well as applying an <code>aria-current="page"</code> to the last item of the set to indicate that it represents the current page.</p>
+        <p>For more information, see the <a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb" target="_blank">WAI-ARIA Authoring Practices for the breadcrumb pattern</a>.</p>
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>
