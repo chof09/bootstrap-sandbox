@@ -1,0 +1,104 @@
+body {
+    padding: 2em 0;
+}
+
+hr {
+    border-top: 1px solid rgba(0,0,0,.2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.row {
+    margin-bottom: .8rem;
+}
+
+.bg-primary {
+    color: #ffffff;
+}
+
+#prvi .row>[class*="col"] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+#drugi .min-height .row {
+    min-height: 10rem;
+    background-color: rgba(255,0,0,.1);
+}
+
+#drugi .row.horizontal-xyz {
+    min-height: 2rem;
+}
+
+#drugi .row>[class*="col"] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+.myhighlight {
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.15);
+}
+
+.min-h-justify {
+    min-height: 12rem;
+}
+
+.min-h-align {
+    min-height: 7rem;
+}
+
+.pre-wrap {
+    white-space: pre-wrap;
+}
+
+/* ##### Swatches for SASS variables (gray) ##### */
+.swatch-100 {
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+.swatch-200 {
+    color: #212529;
+    background-color: #e9ecef;
+}
+
+.swatch-300 {
+    color: #212529;
+    background-color: #dee2e6;
+}
+
+.swatch-400 {
+    color: #212529;
+    background-color: #ced4da;
+}
+
+.swatch-500 {
+    color: #212529;
+    background-color: #adb5bd;
+}
+
+.swatch-600 {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.swatch-700 {
+    color: #fff;
+    background-color: #495057;
+}
+
+.swatch-800 {
+    color: #fff;
+    background-color: #343a40;
+}
+
+.swatch-900 {
+    color: #fff;
+    background-color: #212529;
+}
+/* ------------------------------------------ */
