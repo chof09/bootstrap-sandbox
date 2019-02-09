@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Components - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Button group</h1>
+
+        <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>. Add on optional JavaScript radio and checkbox style behavior with the <a href="./buttons.html#button-plugin">buttons plugin</a>.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">btn-group</span>" role="<span class="text-warning">group</span>" aria-label="Basic example"&gt;
+  &lt;button type="button" class="<span class="text-warning">btn</span> btn-secondary"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="<span class="text-warning">btn</span> btn-secondary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="<span class="text-warning">btn</span> btn-secondary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+        <div class="px-3 py-2 my-3" style="border: 1px solid rgba(0,0,0,.2); border-left: 5px solid var(--warning);">
+            <h5>Ensure correct <code>role</code> and provide a label</h5>
+            <p>In order for assistive technologies (such as screen readers) to convey that a series of buttons is grouped, an appropriate <code>role</code> attribute needs to be provided. For button groups, this would be <code>role="group"</code>, while toolbars should have a <code>role="toolbar"</code>.</p>
+            <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use <code>aria-label</code>, but alternatives such as <code>aria-labelledby</code> can also be used.</p>
+        </div>
+
+        <hr>
+
+        <h3>Button toolbar</h3>
+        <p>Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">btn-toolbar</span>" role="<span class="text-warning">toolbar</span>" aria-label="Toolbar with button groups"&gt;
+  &lt;div class="<span class="text-warning">btn-group</span> mr-2" role="<span class="text-warning">group</span>" aria-label="First group"&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="<span class="text-warning">btn-group</span> mr-2" role="<span class="text-warning">group</span>" aria-label="Second group"&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;5&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;6&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;7&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="<span class="text-warning">btn-group</span>" role="<span class="text-warning">group</span>" aria-label="Third group"&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;8&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-secondary">5</button>
+                <button type="button" class="btn btn-secondary">6</button>
+                <button type="button" class="btn btn-secondary">7</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-secondary">8</button>
+            </div>
+        </div>
+        <p>Feel free to mix input groups with button groups in your toolbars. Similar to the example above, you’ll likely need some utilities though to space things properly.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">btn-toolbar</span> mb-3" role="<span class="text-warning">toolbar</span>" aria-label="Toolbar with button groups"&gt;
+  &lt;div class="<span class="text-warning">btn-group</span> mr-2" role="<span class="text-warning">group</span>" aria-label="First group"&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="input-group"&gt;
+    &lt;div class="input-group-prepend"&gt;
+      &lt;div class="input-group-text" id="btnGroupAddon"&gt;@&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="<span class="text-warning">btn-toolbar justify-content-between</span>" role="<span class="text-warning">toolbar</span>" aria-label="Toolbar with button groups"&gt;
+  &lt;div class="<span class="text-warning">btn-group</span>" role="<span class="text-warning">group</span>" aria-label="First group"&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="input-group"&gt;
+    &lt;div class="input-group-prepend"&gt;
+      &lt;div class="input-group-text" id="btnGroupAddon2"&gt;@&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon">@</div>
+                </div>
+                <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+            </div>
+        </div>
+        <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon2">@</div>
+                </div>
+                <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Sizing</h3>
+        <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">btn-group btn-group-lg</span>" role="group" aria-label="..."&gt;...&lt;/div&gt;
+&lt;div class="<span class="text-warning">btn-group</span>" role="group" aria-label="..."&gt;...&lt;/div&gt;
+&lt;div class="<span class="text-warning">btn-group btn-group-sm</span>" role="group" aria-label="..."&gt;...&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="btn-group btn-group-lg mb-3" role="group" aria-label="Large button group">
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+        <br>
+        <div class="btn-group mb-3" role="group" aria-label="Default button group">
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+        <br>
+        <div class="btn-group btn-group-sm mb-3" role="group" aria-label="Small button group">
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+
+        <hr>
+
+        <h3>Nesting</h3>
+        <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">btn-group</span>" role="group" aria-label="Button group with nested dropdown"&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+  &lt;div class="<span class="text-warning">btn-group</span>" role="group"&gt;
+    &lt;button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+      Dropdown
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu" aria-labelledby="btnGroupDrop1"&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Vertical variation</h3>
+        <p>Make a set of buttons appear vertically stacked rather than horizontally. <strong>Split button dropdowns are not supported here</strong>.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">btn-group-vertical</span>"&gt;
+  ...
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="btn-group-vertical mr-5" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-secondary">Button</button>
+            <button type="button" class="btn btn-secondary">Button</button>
+            <button type="button" class="btn btn-secondary">Button</button>
+            <button type="button" class="btn btn-secondary">Button</button>
+            <button type="button" class="btn btn-secondary">Button</button>
+            <button type="button" class="btn btn-secondary">Button</button>
+        </div>
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-secondary">Button</button>
+            <button type="button" class="btn btn-secondary">Button</button>
+            <div class="btn-group" role="group">
+                <button id="btnGroupVerticalDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary">Button</button>
+            <button type="button" class="btn btn-secondary">Button</button>
+            <div class="btn-group" role="group">
+                <button id="btnGroupVerticalDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupVerticalDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupVerticalDrop4" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>
