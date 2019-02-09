@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Components - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Cards</h1>
+
+        <h3>About</h3>
+        <p>A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+
+        <hr>
+
+        <h3>Example</h3>
+        <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="../utilities/spacing.html">spacing utilities</a> as needed.</p>
+        <p>Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various <a href="#sizing">sizing options</a>.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">card</span>" style="width: 18rem;"&gt;
+  &lt;img src="..." class="<span class="text-warning">card-img-top</span>" alt="..."&gt;
+  &lt;div class="<span class="text-warning">card-body</span>"&gt;
+    &lt;h5 class="<span class="text-warning">card-title</span>"&gt;Card title&lt;/h5&gt;
+    &lt;p class="<span class="text-warning">card-text</span>"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../imgs/image-cap.png" class="card-img-top" alt="Placeholder image">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Content types</h2>
+        <p>Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.</p>
+
+        <h3>Body</h3>
+        <p>The building block of a card is the <code>.card-body</code>. Use it whenever you need a padded section within a card.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">card</span>"&gt;
+  &lt;div class="<span class="text-warning">card-body</span>"&gt;
+    This is some text within a card body.
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                This is some text within a card body.
+            </div>
+        </div>
+
+        <h3>Titles, text, and links</h3>
+        <p>Card titles are used by adding <code>.card-title</code> to a <code>&lt;h*&gt;</code> tag. In the same way, links are added and placed next to each other by adding <code>.card-link</code> to an <code>&lt;a&gt;</code> tag.</p>
+        <p>Subtitles are used by adding a <code>.card-subtitle</code> to a <code>&lt;h*&gt;</code> tag. If the <code>.card-title</code> and the <code>.card-subtitle</code> items are placed in a <code>.card-body</code> item, the card title and subtitle are aligned nicely.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;div class="<span class="text-warning">card-body</span>"&gt;
+    &lt;h5 class="<span class="text-warning">card-title</span>"&gt;Card title&lt;/h5&gt;
+    &lt;h6 class="<span class="text-warning">card-subtitle</span> mb-2 text-muted"&gt;Card subtitle&lt;/h6&gt;
+    &lt;p class="<span class="text-warning">card-text</span>"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href="#" class="<span class="text-warning">card-link</span>"&gt;Card link&lt;/a&gt;
+    &lt;a href="#" class="<span class="text-warning">card-link</span>"&gt;Another link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+
+        <h3>Images</h3>
+        <p><code>.card-img-top</code> places an image to the top of the card. With <code>.card-text</code>, text can be added to the card. Text within <code>.card-text</code> can also be styled with the standard HTML tags.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;img src="..." class="<span class="text-warning">card-img-top</span>" alt="..."&gt;
+  &lt;div class="card-body"&gt;
+    &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <img src="../imgs/image-cap.png" class="card-img-top" alt="Placeholder image">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <h3>List groups</h3>
+        <p>Create lists of content in a card with a flush list group.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;ul class="<span class="text-warning">list-group list-group-flush</span>"&gt;
+    &lt;li class="<span class="text-warning">list-group-item</span>"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="<span class="text-warning">list-group-item</span>"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="<span class="text-warning">list-group-item</span>"&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;div class="<span class="text-warning">card-header</span>"&gt;
+    Featured
+  &lt;/div&gt;
+  &lt;ul class="list-group list-group-flush"&gt;
+    &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <div class="card-header">
+                Featured
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+
+        <h3>Kitchen sink</h3>
+        <p>Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">card</span>" style="width: 18rem;"&gt;
+  &lt;img src="..." class="<span class="text-warning">card-img-top</span>" alt="..."&gt;
+  &lt;div class="<span class="text-warning">card-body</span>"&gt;
+    &lt;h5 class="<span class="text-warning">card-title</span>"&gt;Card title&lt;/h5&gt;
+    &lt;p class="<span class="text-warning">card-text</span>"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul class="<span class="text-warning">list-group list-group-flush</span>"&gt;
+    &lt;li class="<span class="text-warning">list-group-item</span>"&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class="<span class="text-warning">list-group-item</span>"&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class="<span class="text-warning">list-group-item</span>"&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="<span class="text-warning">card-body</span>"&gt;
+    &lt;a href="#" class="<span class="text-warning">card-link</span>"&gt;Card link&lt;/a&gt;
+    &lt;a href="#" class="<span class="text-warning">card-link</span>"&gt;Another link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <img src="../imgs/image-cap.png" class="card-img-top" alt="Placeholder image">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+
+        <h3>Header and footer</h3>
+        <p>Add an optional header and/or footer within a card.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">card</span>"&gt;
+  &lt;div class="<span class="text-warning">card-header</span>"&gt;
+    Featured
+  &lt;/div&gt;
+  &lt;div class="<span class="text-warning">card-body</span>"&gt;
+    &lt;h5 class="<span class="text-warning">card-title</span>"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="<span class="text-warning">card-text</span>"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <p>Card headers can be styled by adding <code>.card-header</code> to <code>&lt;h*&gt;</code> elements.</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="card"&gt;
+  <span class="text-warning">&lt;h5 class="card-header"&gt;Featured&lt;/h5&gt;</span>
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;
+    Quote
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    <span class="text-warning">&lt;blockquote class="blockquote mb-0"&gt;</span>
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+      &lt;footer class="blockquote-footer"&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+    <span class="text-warning">&lt;/blockquote&gt;</span>   
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header">
+                Quote
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="card text-center"&gt;
+  &lt;div class="card-header"&gt;
+    Featured
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="<span class="text-warning">card-footer</span> text-muted"&gt;
+    2 days ago
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="card text-center">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Sizing</h2>
+        <p>Cards assume no specific <code>width</code> to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.</p>
+
+        <h3>Using grid markup</h3>
+        <p>Using the grid, wrap cards in columns and rows as needed.</p>
+        
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>
