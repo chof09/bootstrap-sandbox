@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Components - Bootstrap sandbox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="mb-5">Dropdowns</h1>
+        <p>Dropdowns are built on a third party library, <a href="https://popper.js.org/" target="_blank">Popper.js</a>, which provides dynamic positioning and viewport detection. Be sure to include <em>popper.min.js</em> before Bootstrap’s JavaScript or use <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code> which contains Popper.js. Popper.js isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.</p>
+        <p>Bootstrap does not expect (nor automatically add) any of the <code>role</code> and <code>aria-</code> attributes required for true ARIA menus. Authors will have to include these more specific attributes themselves.</p>
+        <p>However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual <code>.dropdown-item</code> elements using the cursor keys and close the menu with the <kbd>ESC</kbd> key.</p>
+
+        <hr>
+
+        <p>Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Dropdowns can be triggered from <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> elements to better fit your potential needs.</p>
+
+        <h3>Single button</h3>
+        <p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either <code>&lt;button&gt;</code> elements:</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">dropdown</span>"&gt;
+  &lt;button class="btn btn-secondary <span class="text-warning">dropdown-toggle</span>" type="button" id="<span class="text-warning">dropdownMenuButton</span>" <span class="text-warning">data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"</span>&gt;
+    Dropdown button
+  &lt;/button&gt;
+  &lt;div class="<span class="text-warning">dropdown-menu</span>" aria-labelledby="<span class="text-warning">dropdownMenuButton</span>"&gt;
+    &lt;a class="<span class="text-warning">dropdown-item</span>" href="#"&gt;Action&lt;/a&gt;
+    &lt;a class="<span class="text-warning">dropdown-item</span>" href="#"&gt;Another action&lt;/a&gt;
+    &lt;a class="<span class="text-warning">dropdown-item</span>" href="#"&gt;Something else here&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="dropdown mb-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <p>And with <code>&lt;a&gt;</code> elements:</p>
+        <div class="bg-dark p-3 mb-3">
+            <code class="pre-wrap"><!--
+-->&lt;div class="<span class="text-warning">dropdown</span>"&gt;
+  &lt;a class="btn btn-secondary <span class="text-warning">dropdown-toggle</span>" href="#" role="button" id="<span class="text-warning">dropdownMenuLink</span>" <span class="text-warning">data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"</span>&gt;
+    Dropdown link
+  &lt;/a&gt;
+
+  &lt;div class="<span class="text-warning">dropdown-menu</span>" aria-labelledby="<span class="text-warning">dropdownMenuLink</span>"&gt;
+    &lt;a class="<span class="text-warning">dropdown-item</span>" href="#"&gt;Action&lt;/a&gt;
+    &lt;a class="<span class="text-warning">dropdown-item</span>" href="#"&gt;Another action&lt;/a&gt;
+    &lt;a class="<span class="text-warning">dropdown-item</span>" href="#"&gt;Something else here&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<!--
+            --></code>
+        </div>
+        <div class="dropdown mb-3">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <p>The best part is you can do this with any button variant, too:</p>
+
+    </div>
+
+    <hr>
+
+<!-- jQuery slim & Bootstrap bundle (bootstrap + popper) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+</body>
+</html>
